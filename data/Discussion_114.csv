@@ -1,0 +1,101 @@
+customer_id,email,address_id,name,age
+524.0,jared.ely@sakilacustomer.org,530.0,"Jared, Ely",age: 58
+1.0,mary.smith@sakilacustomer.org,5.0,"Mary, Smith",age: 26
+2.0,patricia.johnson@sakilacustomer.org,6.0,mary - smith,age: 44
+3.0,,7.0,"Linda, Williams",age: 36
+4.0,,8.0,"Barbara, Jones",age: 48
+5.0,,9.0,"Elizabeth, Brown",age: 46
+6.0,jennifer.davis@sakilacustomer.org,10.0,"Jennifer, Davis",age: 24
+7.0,maria.miller@sakilacustomer.org,11.0,"Maria, Miller",age: 21
+8.0,susan.wilson@sakilacustomer.org,12.0,Susan - Wilson,age: 34
+9.0,margaret.moore@sakilacustomer.org,13.0,"Margaret, Moore",age: 33
+10.0,"dorothy.taylor, sakilacustomer.org",14.0,"Dorothy, Taylor",age: 47
+11.0,lisa.anderson@sakilacustomer.org,15.0,"lisa, anderson",age: 59
+12.0,nancy.thomas@sakilacustomer.org,16.0,"Nancy, Thomas",age: 18
+13.0,karen.jackson@sakilacustomer.org,17.0,"Karen, Jackson",age: 27
+14.0,betty.white@sakilacustomer.org,18.0,"Betty, White",age: 24
+15.0,helen.harris@sakilacustomer.org,19.0,"Helen, Harris",age: 53
+16.0,sandra.martin@sakilacustomer.org,20.0,"Sandra, Martin",age: 52
+17.0,donna.thompson@sakilacustomer.org,21.0,"Donna, Thompson",age: 46
+18.0,carol.garcia@sakilacustomer.org,22.0,"Carol, Garcia",age: 57
+19.0,ruth.martinez@sakilacustomer.org,23.0,"Ruth, Martinez",age: 23
+20.0,sharon.robinson@sakilacustomer.org,24.0,"Sharon, Robinson",age: 58
+21.0,michelle.clark@sakilacustomer.org,25.0,"Michelle, Clark",age: 29
+22.0,laura.rodriguez@sakilacustomer.org,26.0,"Laura, Rodriguez",age: 22
+23.0,sarah.lewis@sakilacustomer.org,27.0,sarah - Lewis,age: 51
+24.0,kimberly.lee@sakilacustomer.org,28.0,"Kimberly, Lee",age: 46
+25.0,deborah.walker@sakilacustomer.org,29.0,,age: 49
+26.0,jessica.hall@sakilacustomer.org,30.0,,age: 35
+27.0,shirley.allen@sakilacustomer.org,31.0,,age: 26
+28.0,cynthia.young@sakilacustomer.org,32.0,,age: 37
+29.0,angela.hernandez@sakilacustomer.org,33.0,"Angela, Hernandez",age: 24
+30.0,melissa.king@sakilacustomer.org,34.0,"Melissa, King",age: 37
+31.0,brenda.wright@sakilacustomer.org,35.0,"Brenda, Wright",age: 33
+32.0,amy.lopez@sakilacustomer.org,36.0,"Amy, Lopez",age: 58
+33.0,anna.hill@sakilacustomer.org,37.0,"Anna, Hill",age: 24
+34.0,rebecca.scott@sakilacustomer.org,38.0,"Rebecca, Scott",age: 18
+35.0,virginia.green@sakilacustomer.org,39.0,"Virginia, Green",age: 45
+36.0,kathleen.adams@sakilacustomer.org,40.0,"Kathleen, Adams",age: 24
+37.0,pamela.baker@sakilacustomer.org,41.0,"Pamela, Baker",age: 19
+38.0,martha.gonzalez@sakilacustomer.org,42.0,"Martha, Gonzalez",age: 47
+39.0,debra.nelson@sakilacustomer.org,43.0,"Debra, Nelson",age: 19
+40.0,amanda.carter@sakilacustomer.org,44.0,"Amanda, Carter",age: 45
+41.0,stephanie.mitchell@sakilacustomer.org,45.0,"Stephanie, Mitchell",age: 35
+42.0,carolyn.perez@sakilacustomer.org,46.0,"Carolyn, Perez",age: 38
+43.0,christine.roberts@sakilacustomer.org,47.0,"Christine, Roberts",age: 58
+44.0,marie.turner@sakilacustomer.org,48.0,"Marie, Turner",age: 52
+45.0,janet.phillips@sakilacustomer.org,49.0,"Janet, Phillips",age: 38
+46.0,catherine.campbell@sakilacustomer.org,50.0,"Catherine, Campbell",age: 41
+47.0,frances.parker@sakilacustomer.org,51.0,"Frances, Parker",age: 31
+48.0,ann.evans@sakilacustomer.org,52.0,"Ann, Evans",age: 57
+49.0,joyce.edwards@sakilacustomer.org,53.0,"Joyce, Edwards",age: 42
+50.0,diane.collins@sakilacustomer.org,54.0,"Diane, Collins",age: 56
+51.0,alice.stewart@sakilacustomer.org,55.0,"Alice, Stewart",age: 18
+52.0,julie.sanchez@sakilacustomer.org,56.0,"Julie, Sanchez",age: 58
+53.0,heather.morris@sakilacustomer.org,57.0,"Heather, Morris",age: 40
+54.0,teresa.rogers@sakilacustomer.org,58.0,"Teresa, Rogers",age: 20
+55.0,doris.reed@sakilacustomer.org,59.0,"Doris, Reed",age: 38
+56.0,gloria.cook@sakilacustomer.org,60.0,"Gloria, Cook",age: 35
+57.0,evelyn.morgan@sakilacustomer.org,61.0,"Evelyn, Morgan",age: 49
+58.0,jean.bell@sakilacustomer.org,62.0,"Jean, Bell",age: 24
+59.0,cheryl.murphy@sakilacustomer.org,63.0,"Cheryl, Murphy",age: 19
+60.0,mildred.bailey@sakilacustomer.org,64.0,"Mildred, Bailey",age: 34
+61.0,katherine.rivera@sakilacustomer.org,65.0,"Katherine, Rivera",age: 19
+62.0,joan.cooper@sakilacustomer.org,66.0,"Joan, Cooper",age: 27
+63.0,ashley.richardson@sakilacustomer.org,67.0,"Ashley, Richardson",age: 37
+64.0,judith.cox@sakilacustomer.org,68.0,"Judith, Cox",age: 39
+65.0,rose.howard@sakilacustomer.org,69.0,"Rose, Howard",age: 41
+66.0,janice.ward@sakilacustomer.org,70.0,"Janice, Ward",age: 30
+67.0,kelly.torres@sakilacustomer.org,71.0,"Kelly, Torres",age: 59
+68.0,nicole.peterson@sakilacustomer.org,72.0,"Nicole, Peterson",age: 27
+69.0,judy.gray@sakilacustomer.org,73.0,"Judy, Gray",age: 34
+70.0,christina.ramirez@sakilacustomer.org,74.0,"Christina, Ramirez",age: 21
+71.0,kathy.james@sakilacustomer.org,75.0,"Kathy, James",age: 43
+72.0,theresa.watson@sakilacustomer.org,76.0,"Theresa, Watson",age: 20
+73.0,beverly.brooks@sakilacustomer.org,77.0,"Beverly, Brooks",age: 31
+74.0,denise.kelly@sakilacustomer.org,78.0,"Denise, Kelly",age: 20
+75.0,tammy.sanders@sakilacustomer.org,79.0,"Tammy, Sanders",age: 59
+76.0,irene.price@sakilacustomer.org,80.0,"Irene, Price",age: 33
+77.0,jane.bennett@sakilacustomer.org,81.0,"Jane, Bennett",age: 30
+78.0,lori.wood@sakilacustomer.org,82.0,"Lori, Wood",age: 42
+79.0,rachel.barnes@sakilacustomer.org,83.0,"Rachel, Barnes",age: 53
+80.0,marilyn.ross@sakilacustomer.org,84.0,"Marilyn, Ross",age: 48
+81.0,andrea.henderson@sakilacustomer.org,85.0,"Andrea, Henderson",age: 31
+82.0,kathryn.coleman@sakilacustomer.org,86.0,"Kathryn, Coleman",age: 34
+83.0,louise.jenkins@sakilacustomer.org,87.0,"Louise, Jenkins",age: 53
+84.0,sara.perry@sakilacustomer.org,88.0,"Sara, Perry",age: 33
+85.0,anne.powell@sakilacustomer.org,89.0,"Anne, Powell",age: 20
+86.0,jacqueline.long@sakilacustomer.org,90.0,"Jacqueline, Long",age: 36
+87.0,wanda.patterson@sakilacustomer.org,91.0,"Wanda, Patterson",age: 20
+88.0,bonnie.hughes@sakilacustomer.org,92.0,"Bonnie, Hughes",age: 54
+89.0,julia.flores@sakilacustomer.org,93.0,"Julia, Flores",age: 25
+90.0,ruby.washington@sakilacustomer.org,94.0,"Ruby, washington",age: 50
+91.0,lois.butler@sakilacustomer.org,95.0,"Lois, Butler",age: 42
+92.0,tina.simmons@sakilacustomer.org,96.0,"Tina, Simmons",age: 24
+93.0,phyllis.foster@sakilacustomer.org,97.0,"Phyllis, Foster",age: 41
+94.0,norma.gonzales@sakilacustomer.org,98.0,"Norma, Gonzales",age: 23
+95.0,paula.bryant@sakilacustomer.org,99.0,"Paula, Bryant",age: 19
+96.0,annie.russell,100.0,"Diana, Alexander",age: 56
+97.0,annie.russell@sakilacustomer.org,101.0,"Annie, Russell",age: 43
+98.0,lillian.griffin@sakilacustomer.org,102.0,"Lillian, Griffin",age: 21
+99.0,"emily.diaz, sakilacustomer.org",103.0,"Emily, Diaz",age: 26
