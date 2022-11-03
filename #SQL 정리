@@ -1,0 +1,135 @@
+#SQL 정리
+
+
+-- 테이블 이름 조회
+.tables 
+
+-- 테이블의 구조 확인
+.schema 테이블이름
+
+-- 테이블 컬럼 정보 확인
+  SELECT p.name, p.type, p.'notnull', p.pk FROM pragma_table_info('Albums_Part1') p;
+
+
+# 테이블이 있는 경우에 삭제
+	DROP TABLE IF EXISTS User;
+
+
+# 테이블 생성 case 01
+	CREATE TABLE User (
+	  id          INTEGER 		PRIMARY KEY 	NOT NULL,
+	  node_id     INTEGER ,
+	  login       VARCHAR(10) ,
+
+	  FOREIGN KEY( node_id ) REFERENCES Node ( id )
+	);
+
+
+# 테이블 생성 case 02
+	CREATE TABLE User (
+	  id          INTEGER 		NOT NULL,
+	  node_id     INTEGER ,
+	  login       VARCHAR(10) ,
+
+	  PRIMARY KEY (id, node_id)
+
+	  FOREIGN KEY( node_id ) REFERENCES Node ( id )
+	);
+
+
+# 테이블 생성 case 03
+	# : 없는 경우에만 생성
+	CREATE TABLE IF NOT EXISTS 
+
+
+# 테이블 생성 case 04
+	# : 테이블 있으면 교체 & 조회 하여 생성
+	CREATE OR REPLACE <table_name> AS SELECT * FROM <view>
+
+
+# Insert 
+
+	INSERT INTO Teacher (name,subject,salary) VALUES ( ? , ?, ?);
+
+	INSERT INTO Teacher (name,subject,salary) VALUES ( :name , :subject, :salary);
+
+
+# 중앙값
+	SELECT s.student_id  , s.age as '중앙값'
+	FROM Student s
+	ORDER BY s.age 
+	LIMIT 1
+	OFFSET (SELECT COUNT(*)FROM Student) / 2
+
+
+# 조인
+	select * from Customers c LEFT OUTER JOIN Invoices i on c.id = i.customer_id where i.invoice_amt isNULL"
+
+	select * from Customers c RIGHT OUTER JOIN Invoices i on c.id = i.customer_id where c.name isNULL
+
+
+# 조회 SQL
+
+	--아티스트 이름에 'the' 가 들어간 앨범의 AlbumId를 전부 조회합니다
+		select * from albums a 
+		where a.Title like '%the%'
+
+	--CustomerId 가 29, 30, 63 인 고객들의 주문금액이 $1.00 이상 $3.00 이하인 주문 (invoice)의 Id를 전부 조회합니다.
+		select *  from invoices i 
+		where i.CustomerId in ( 29, 30, 63 ) and i.Total >= 1 and i.Total <= 3
+
+
+	--각 나라 (country) 별로 고객 (customer) 수를 구해봅니다.
+		select ('The_Num_of_customers_' || count(*) || '_' || c.Country ) as The_Num from customers c 
+		group by c.Country 
+
+	--총 구매한 비용이 가장 많은 고객 (customer) 5 명의 고객 (customer)의 CustomerId를 조회합니다.
+		select i.CustomerId from invoices i 
+		group by CustomerId order by sum(Total) desc limit 5
+
+
+	--각 장르 (genre) 마다 트랙을 구매한 고객의 id 의 수를 구해봅니다.
+		select g.Name as genre_name, count(distinct i.CustomerId) as 'The_Number'
+		from invoices i , invoice_items ii , tracks t , genres g 
+		where i.InvoiceId = ii.InvoiceId and ii.TrackId = t.TrackId and t.GenreId = g.GenreId
+		group by g.GenreId
+
+
+	--직원 (employee) 중에서 회사에서 2020년 1월 1일 기준으로 7년 넘게 (>) 근무한 직원들의 EmployeeId 를 조회해야 합니다. 조회된 결과는 LastName 을 기준으로 오름차순으로 정렬합니다.
+
+	  select * from employees e 
+	  where e.HireDate < datetime('2020-01-01', '-7 years')
+	  order by e.LastName asc
+
+
+	-- 출력 편집 예
+
+		--# select 연결
+		select c.CustomerId  , ( c.City || ' ' || c.Country ) as '새로운 컬럼' 
+
+		--# 문자열 자르기
+		select ( SUBSTRING(c.FirstName , 1, 4) || SUBSTRING(c.LastName, 1,2) ) as '새로운 컬럼' 
+
+		--# 범위 구분
+		select t.name , t.subject , t.salary ,
+		  case 
+		    when t.salary < 3000 then 'Low'
+		    when t.salary >= 3000 and t.salary < 4000 then 'Mid'
+		    when t.salary > 4000 then 'Hight'
+		  END as '월급그룹'
+
+		--# 날짜 형식 
+		select  strftime('%Y-%m-%d', i.invoice_date ) as '날짜'
+
+	-- 부분 그룹핑
+
+		select t.id as teacher_id , s.student_id ,
+			ROW_NUMBER() OVER ( ORDER BY s.student_id ) as '전체 학생순서'
+		from Teacher t , Student s 
+		where t.id = s.teacher_id 
+
+
+		select t.id as teacher_id , s.student_id ,
+			ROW_NUMBER() OVER (PARTITION BY t.id ORDER BY s.student_id ) as '전체 학생순서'
+		from Teacher t , Student s 
+		where t.id = s.teacher_id 
